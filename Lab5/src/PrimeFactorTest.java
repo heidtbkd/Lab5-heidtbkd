@@ -10,4 +10,6 @@ public class PrimeFactorTest {
 	{
 		assertTrue("Hope this does not Minge.", true);
 	}
+	
+	
 }
