@@ -71,4 +71,15 @@ public class PrimeFactorTest {
 		list.add(3);
 		assertEquals(PrimeFactor.prime(9), list);
 	}
+	
+	@Test
+	public void testPrimeFactorForBigNumber()
+	{
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(5);
+		list.add(7);
+		list.add(7);
+		list.add(1327);
+		assertEquals(PrimeFactor.prime(325115), list);
+	}
 }
