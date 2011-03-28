@@ -26,4 +26,14 @@ public class PrimeFactorTest {
 		list.add(2);
 		assertEquals(PrimeFactor.prime(2), list);
 	}
+	
+	@Test
+	public void testPrimeFactorForThree()
+	{
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(3);
+		assertEquals(PrimeFactor.prime(3), list);
+	}
+	
+	
 }
