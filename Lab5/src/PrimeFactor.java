@@ -17,8 +17,18 @@ public class PrimeFactor {
 			{
 				if(i%j == 0)
 				{
-					iPrime = false;
-					prime(j, list);
+					if (j * j == i)
+					{
+						iPrime = false;
+						prime(j, list);
+						prime(j, list);
+					}
+					else
+					{
+						iPrime = false;
+						prime(j, list);
+					}
+					
 				}
 			}
 			if (iPrime)
