@@ -52,4 +52,14 @@ public class PrimeFactorTest {
 		list.add(3);
 		assertEquals(PrimeFactor.prime(6), list);
 	}
+	
+	@Test
+	public void testPrimeFactorForEight()
+	{
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(2);
+		list.add(2);
+		list.add(2);
+		assertEquals(PrimeFactor.prime(8), list);
+	}
 }
