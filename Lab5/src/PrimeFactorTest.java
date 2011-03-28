@@ -22,6 +22,8 @@ public class PrimeFactorTest {
 	@Test
 	public void testPrimeFactorForTwo()
 	{
-		assertEquals(PrimeFactor.prime(2), new ArrayList<Integer>().add(2));
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(2);
+		assertEquals(PrimeFactor.prime(2), list);
 	}
 }
