@@ -5,14 +5,28 @@ public class PrimeFactor {
 	
 	public static ArrayList<Integer> prime (int i)
 	{
-		ArrayList<Integer> temp = new ArrayList<Integer>();
-		
+		return prime(i, new ArrayList<Integer>());
+	}
+
+	public static ArrayList<Integer> prime (int i, ArrayList<Integer> list)
+	{
 		if (i > 1)
 		{
-			temp.add(i);
-			return temp;
+			boolean iPrime = true;
+			for (int j = 2; j <= i/2; j++)
+			{
+				if(i%j == 0)
+				{
+					iPrime = false;
+					prime(j, list);
+				}
+			}
+			if (iPrime)
+			{
+				list.add(i);
+			}
+			return list;
 		}
-		
 		return null;
 	}
 }
