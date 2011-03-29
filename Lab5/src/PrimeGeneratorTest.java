@@ -24,4 +24,12 @@ public class PrimeGeneratorTest {
 	{
 		assertEquals(PrimeGenerator.generatePrimes(2), new ArrayList<Integer>());
 	}
+	
+	@Test
+	public void testPrimeGeneratorForThree()
+	{
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(2);
+		assertEquals(PrimeGenerator.generatePrimes(3), list);
+	}
 }
