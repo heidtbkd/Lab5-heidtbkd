@@ -71,4 +71,19 @@ public class PrimeGeneratorTest {
 		list.add(7);
 		assertEquals(PrimeGenerator.generatePrimes(8), list);
 	}
+	
+	@Test
+	public void testPrimeGeneratorForTwenty()
+	{
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(2);
+		list.add(3);
+		list.add(5);
+		list.add(7);
+		list.add(11);
+		list.add(13);
+		list.add(17);
+		list.add(19);
+		assertEquals(PrimeGenerator.generatePrimes(20), list);
+	}
 }
