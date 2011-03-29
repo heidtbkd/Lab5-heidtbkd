@@ -18,4 +18,10 @@ public class PrimeGeneratorTest {
 	{
 		assertEquals(PrimeGenerator.generatePrimes(1), new ArrayList<Integer>());
 	}
+	
+	@Test
+	public void testPrimeGeneratorForTwo()
+	{
+		assertEquals(PrimeGenerator.generatePrimes(2), new ArrayList<Integer>());
+	}
 }
