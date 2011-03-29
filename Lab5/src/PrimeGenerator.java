@@ -15,6 +15,19 @@ public class PrimeGenerator {
 			if(i==3)
 			{
 				temp.add(2);
+				return temp;
+			}
+			
+			for(int j = 2; j < i; j++)
+			{
+				if (j%2 != 0)
+				{
+					temp.add(j);
+				}
+				if(j%3 != 0)
+				{
+					temp.add(j);
+				}
 			}
 			
 			return temp;
