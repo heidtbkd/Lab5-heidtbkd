@@ -50,4 +50,14 @@ public class PrimeGeneratorTest {
 		list.add(3);
 		assertEquals(PrimeGenerator.generatePrimes(5), list);
 	}
+	
+	@Test
+	public void testPrimeGeneratorForSix()
+	{
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		list.add(2);
+		list.add(3);
+		list.add(5);
+		assertEquals(PrimeGenerator.generatePrimes(6), list);
+	}
 }
