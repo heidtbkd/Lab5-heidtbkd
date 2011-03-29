@@ -12,19 +12,13 @@ public class PrimeGenerator {
 		{
 			ArrayList<Integer> temp = new ArrayList<Integer>();
 			
-			if(i==3)
-			{
-				temp.add(2);
-				return temp;
-			}
-			
 			for(int j = 2; j < i; j++)
 			{
-				if (j%2 != 0)
+				if((j==2) || (j==3))
 				{
 					temp.add(j);
 				}
-				if(j%3 != 0)
+				if((j%2!=0)&&(j%3!=0))
 				{
 					temp.add(j);
 				}
